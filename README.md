@@ -5,6 +5,8 @@
     3 支持当网络发生变化的时候；提示用户是否用4G网络去下载     
     4 支持断点下载     
     5 支持强制升级
+    #### 项目演示
+    ![](https://github.com/zhuangzeqin/UpdateAppDemo/blob/master/app/device-2017-09-08-180255.mp4)
     6 使用极其简单
       UpdateAppBuilder.with(MainActivity.this).
                         apkPath(url).//apk 的下载路径
