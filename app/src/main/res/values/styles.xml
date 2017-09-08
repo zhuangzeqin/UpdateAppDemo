@@ -1,0 +1,37 @@
+<resources>
+
+    <style name="dialog_custom_style" parent="android:Theme.Dialog">
+
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="dialog_custom_buttom_enter_style" parent="dialog_custom_style">
+        <item name="android:windowAnimationStyle">@style/AnimFade_Buttom</item>
+    </style>
+    
+    <style name="dialog_custom_top_enter_style" parent="dialog_custom_style">
+        <item name="android:windowAnimationStyle">@style/AnimFade_Top</item>
+    </style>
+    
+     <style name="AnimFade_Buttom" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/dialog_buttom_enter</item>
+        <item name="@android:windowExitAnimation">@anim/dialog_buttom_exit</item>
+    </style>
+     <style name="AnimFade_Top" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/dialog_top_enter</item>
+        <item name="@android:windowExitAnimation">@anim/dialog_top_exit</item>
+    </style>
+
+</resources>

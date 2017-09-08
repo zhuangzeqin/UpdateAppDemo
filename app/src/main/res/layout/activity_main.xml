@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eeepay.cn.zzq.demo.updateapp.ui.MainActivity">
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="开始"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转页面"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="305dp" />
+
+    <!--   <Button
+           android:id="@+id/btn_paust"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="暂停"
+           tools:layout_editor_absoluteX="114dp"
+           tools:layout_editor_absoluteY="100dp" />
+
+       <Button
+           android:id="@+id/btn_dele"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="删除"
+           tools:layout_editor_absoluteX="215dp"
+           tools:layout_editor_absoluteY="100dp" />-->
+
+</android.support.constraint.ConstraintLayout>

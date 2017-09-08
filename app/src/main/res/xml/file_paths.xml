@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <paths>
+        <!--path=""，是有特殊意义的，它代表根目录，也就是说你可以向其它的应用共享根目录及其子目录下任何一个文件了。-->
+        <external-path path="" name="download"/>
+    </paths>
+</resources>

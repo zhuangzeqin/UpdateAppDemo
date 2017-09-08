@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">UpdateAppDemo</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+    <string name="loading">请稍候...</string>
+
+    <string name="tipmsg" formatted="false">
+        目前手机不是WiFi状态 \n
+        确认是否继续下载更新？
+    </string>
+</resources>

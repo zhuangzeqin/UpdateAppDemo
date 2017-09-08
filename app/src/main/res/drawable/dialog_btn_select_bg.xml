@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="false"><shape>
+            <gradient android:angle="270" android:centerColor="@color/dialog_btn_normal_bg" android:endColor="@color/dialog_btn_normal_bg" android:startColor="@color/dialog_btn_normal_bg" />
+
+            <corners android:bottomLeftRadius="2dp" android:bottomRightRadius="2dp" android:topLeftRadius="0dp" android:topRightRadius="0dp" />
+        </shape></item>
+    <item android:state_pressed="true"><shape>
+            <gradient android:angle="270" android:centerColor="@color/dialog_btn_hold_bg" android:endColor="@color/dialog_btn_hold_bg" android:startColor="@color/dialog_btn_hold_bg" />
+
+            <corners android:bottomLeftRadius="2dp" android:bottomRightRadius="2dp" android:topLeftRadius="0dp" android:topRightRadius="0dp" />
+        </shape></item>
+    <item android:state_focused="true"><shape>
+            <gradient android:angle="270" android:centerColor="@color/dialog_btn_hold_bg" android:endColor="@color/dialog_btn_hold_bg" android:startColor="@color/dialog_btn_hold_bg" />
+
+            <corners android:bottomLeftRadius="2dp" android:bottomRightRadius="2dp" android:topLeftRadius="0dp" android:topRightRadius="0dp" />
+        </shape></item>
+    <item android:state_selected="true"><shape>
+            <gradient android:angle="270" android:centerColor="@color/dialog_btn_hold_bg" android:endColor="@color/dialog_btn_hold_bg" android:startColor="@color/dialog_btn_hold_bg" />
+
+            <corners android:bottomLeftRadius="2dp" android:bottomRightRadius="2dp" android:topLeftRadius="0dp" android:topRightRadius="0dp" />
+        </shape></item>
+
+</selector>
