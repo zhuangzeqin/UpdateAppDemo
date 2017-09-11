@@ -46,6 +46,7 @@ public class NetStateReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
 //        mBroadcastReceiver = NetStateReceiver.this;
         if (intent.getAction().equalsIgnoreCase(ANDROID_NET_CHANGE_ACTION) || intent.getAction().equalsIgnoreCase(CUSTOM_ANDROID_NET_CHANGE_ACTION)) {
+            if (mNetType==NetUtils.getAPNType(context)) return;//add by zhuangzeqin 2017年9月11日10:10:40// 如果回调回来跟上次的一样；直接就return了； 避免有些情况回调2次网络监听
             boolean networkAvailable = NetUtils.isNetworkConnected(context);
             if (!networkAvailable) {
                 Log.e(TAG, "<--- network disconnected --->");

@@ -114,8 +114,8 @@ public class ShowDialogFileDownload extends FileDownloadListener {
     }
 
     private void isForceShowDialog() {
-        if (dialog!=null)//不知道为什么；网络监听会回调2次？
-            dialog.cancel();
+//        if (dialog!=null)//不知道为什么；网络监听会回调2次？
+//            dialog.cancel();
         View view = View.inflate(mContext, R.layout.app_update, null);
         mProgress = (ProgressBar) view.findViewById(R.id.progress);
         mPercent = (TextView) view.findViewById(R.id.tv_progress);

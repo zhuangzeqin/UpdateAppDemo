@@ -10,7 +10,6 @@ import android.view.WindowManager;
 import android.widget.Toast;
 
 import com.eeepay.cn.zzq.demo.updateapp.R;
-import com.eeepay.cn.zzq.demo.updateapp.utils.NetUtils;
 import com.eeepay.cn.zzq.demo.updateapp.utils.Utils;
 import com.eeepay.cn.zzq.demo.updateapp.view.CustomDialog;
 import com.liulishuo.filedownloader.BaseDownloadTask;
@@ -62,10 +61,6 @@ public class ShowProgressFileDownload extends FileDownloadListener {
         notificationManager = (NotificationManager) mContext.getSystemService(mContext.NOTIFICATION_SERVICE);
         //发送一个通知
         notificationManager.notify(NOTIFICATIONID, notification);
-
-        //开启广播去监听 网络 改变事件
-        NetStateReceiver.removeRegisterObserver(mNetChangeObserver);
-        NetStateReceiver.addObserver(mNetChangeObserver);
     }
 
     /**
@@ -168,8 +163,8 @@ public class ShowProgressFileDownload extends FileDownloadListener {
     }
 
     private void showTipDialog(final Activity mContext) {
-        if (dialog!=null)//不知道为什么；网络监听会回调2次？
-            dialog.cancel();
+//        if (dialog!=null)//不知道为什么；网络监听会回调2次？
+//            dialog.cancel();
         dialog = new CustomDialog(mContext);
         dialog.setTitles("温馨提示").setMessage("新的版本已经下载好，是否需要更新？");
         dialog.setPositiveButton(mContext.getString(R.string.ok), new View.OnClickListener() {
@@ -184,28 +179,5 @@ public class ShowProgressFileDownload extends FileDownloadListener {
         dialog.setCanceledOnTouchOutside(false);
         dialog.show();
     }
-    /**
-     * 网络观察者
-     */
-    protected final NetChangeObserver mNetChangeObserver = new NetChangeObserver() {
-        @Override
-        public void onNetConnected(NetUtils.NetType type) {//网络连接
-            if (type == NetUtils.NetType.WIFI) {
-
-            } else if (type == NetUtils.NetType.TYPE_MOBILE) {
-
-            }
-            if (dialog!=null)//不知道为什么；网络监听会回调2次？
-                dialog.cancel();
-
-        }
-
-        @Override
-        public void onNetDisConnect() {//网络已经断开
-            if (dialog!=null)//不知道为什么；网络监听会回调2次？
-                dialog.cancel();
-        }
-    };
-
 
 }
