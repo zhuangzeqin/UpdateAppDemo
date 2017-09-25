@@ -24,9 +24,12 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    //Android 文件下载引擎，稳定、高效、灵活、简单易用的框架
+
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha9'
+    //Android 文件下载引擎，稳定、高效、灵活、简单易用的框架
     compile 'com.liulishuo.filedownloader:library:1.6.4'
     testCompile 'junit:junit:4.12'
+    //打印日志
+    compile 'com.vise.xiaoyaoyou:viselog:1.0.0'
 }
