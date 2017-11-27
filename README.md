@@ -14,3 +14,8 @@
                         serverVersionName("1.0.1")//服务的版本(会与当前应用的版本号进行比较)
                         .updateInfo("有新的版本发布啦！赶紧下载体验")//升级版本信息
                         .start();//开始下载
+
+
+如果对你有用；不妨请小编我喝个咖啡；嘻嘻；你的动力；是我不懈努力
+
+![image](https://github.com/zhuangzeqin/APPChannel/blob/master/TIM20171109141728.png)
